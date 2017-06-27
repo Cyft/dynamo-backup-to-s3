@@ -1,6 +1,6 @@
 {
-  "name": "dynamo-backup-to-s3",
-  "version": "0.6.1",
+  "name": "cyft-dynamo-backup-to-s3",
+  "version": "0.6.6",
   "author": "Dylan Lingelbach (https://github.com/dylanlingelbach)",
   "license": "MIT",
   "contributors": [
@@ -28,7 +28,8 @@
     "lodash": "^3.10.1",
     "moment": "^2.10.6",
     "moment-range": "^2.0.3",
-    "s3-streaming-upload": "^0.2.1"
+    "s3-deploy": "^0.7.5",
+    "s3-streaming-upload": "^0.2.3"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -40,6 +41,8 @@
     "mocha": "^2.3.4"
   },
   "scripts": {
-    "test": "NODE_ENV=test mocha --timeout 120000"
+    "test": "NODE_ENV=test mocha --timeout 120000",
+    "deploy:s3": "./node_modules/.bin/s3-deploy cyft-dynamo-backup-to-s3*.tgz --bucket node-modules.cyft.io",
+    "deploy:full": "npm pack && npm run deploy:s3 && rm cyft-dynamo-backup-to-s3*.tgz"
   }
 }
