@@ -29,7 +29,7 @@
     "moment": "^2.10.6",
     "moment-range": "^2.0.3",
     "s3-deploy": "^0.7.5",
-    "s3-streaming-upload": "https://s3.amazonaws.com/node-modules.cyft.io/s3-streaming-upload-0.6.7-cyft.tgz"
+    "cyft-s3-streaming-upload": "https://s3.amazonaws.com/node-modules.cyft.io/s3-streaming-upload-0.6.7-cyft.tgz"
   },
   "engines": {
     "node": ">=0.10.0"
