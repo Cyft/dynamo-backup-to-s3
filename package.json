@@ -23,13 +23,13 @@
   },
   "dependencies": {
     "async": "^1.5.0",
-    "aws-sdk": "^2.2.21",
+    "aws-sdk": "^2.4.7",
     "commander": "^2.9.0",
     "lodash": "^3.10.1",
     "moment": "^2.10.6",
     "moment-range": "^2.0.3",
     "s3-deploy": "^0.7.5",
-    "s3-streaming-upload": "https://s3.amazonaws.com/node-modules.cyft.io/s3-streaming-upload-0.6.7-cyft.tgz"
+    "cyft-s3-streaming-upload": "https://s3.amazonaws.com/node-modules.cyft.io/s3-streaming-upload-0.6.7-cyft.tgz"
   },
   "engines": {
     "node": ">=0.10.0"
